@@ -69,7 +69,7 @@ const handlePizzaSubmit = event => {
   })
   .catch( err => {
     console.log(err);
-    res.status(400).json(err);
+    saveRecord(formData);
   });
 };
 
